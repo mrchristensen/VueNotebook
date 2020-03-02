@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Learning Vue</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+  <div id="root">
+    <button :title="title">Hover over me</button>
+    <h1 :class="className">Hello World</h1>
+    <button :class="{ 'blue': isLoading}" @click="toggleLoading">Click Me</button>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script text="type/javascript" src="/script.js"></script>
+</body>
+
+</html>

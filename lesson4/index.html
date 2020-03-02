@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Learning Vue</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <div id="root">
+        <p> {{ message }}</p>
+        <p>I said, {{ screaming }}</p>
+
+        <h1>Tasks</h1>
+        <ul>
+            <li v-for="task in tasks" v-text="task.description"></li>
+        </ul>
+
+        <h1>Incomplete Tasks</h1>
+        <ul>
+            <li v-for="task in incompleteTasks" v-text="task.description"></li>
+        </ul>
+
+        <h1>Completed Tasks</h1>
+        <ol>
+            <li v-for="task in completedTasks" v-text="task.description"></li>
+        </ol>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script text="type/javascript" src="/script.js"></script>
+</body>
+
+</html>
